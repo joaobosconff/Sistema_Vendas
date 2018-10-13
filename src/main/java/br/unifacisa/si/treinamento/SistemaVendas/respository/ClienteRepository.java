@@ -1,5 +1,9 @@
 package br.unifacisa.si.treinamento.SistemaVendas.respository;
 
-public interface ClienteRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import br.unifacisa.si.treinamento.SistemaVendas.domains.Cliente;
+
+public interface ClienteRepository extends CrudRepository<Cliente, String> {
 
 }

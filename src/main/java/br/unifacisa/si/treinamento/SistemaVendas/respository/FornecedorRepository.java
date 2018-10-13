@@ -1,5 +1,9 @@
 package br.unifacisa.si.treinamento.SistemaVendas.respository;
 
-public interface FornecedorRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import br.unifacisa.si.treinamento.SistemaVendas.domains.Fornecedor;
+
+public interface FornecedorRepository extends CrudRepository<Fornecedor, String> {
 
 }
