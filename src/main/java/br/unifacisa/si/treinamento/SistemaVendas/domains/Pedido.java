@@ -1,23 +1,18 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
-import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Pedido {
 	
-	@Id
-	private String id;
+	
 	
 	private Integer quantidade;
+	@DBRef
 	private Produto produto;
 	private Double valorTotalPedido;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+	
 	public Integer getQuantidade() {
 		return quantidade;
 	}

@@ -1,12 +1,11 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
-import org.springframework.data.annotation.Id;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Endereco {
-	@Id
-	private String id;
+	
 	
 	private String rua;
 	private String bairro;
@@ -21,12 +20,7 @@ public class Endereco {
 		this.cidade = cidade;
 		this.estado = estado;
 	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+	
 	public String getRua() {
 		return rua;
 	}

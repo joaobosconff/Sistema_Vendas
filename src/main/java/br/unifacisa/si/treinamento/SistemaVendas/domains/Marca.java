@@ -1,6 +1,7 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -10,7 +11,9 @@ public class Marca {
 	private String id;
 	
 	private String nome;
+	@DBRef
 	private Fornecedor fornecedor;
+	
 	public String getId() {
 		return id;
 	}

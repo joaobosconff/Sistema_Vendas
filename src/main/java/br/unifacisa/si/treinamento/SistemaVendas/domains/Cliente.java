@@ -1,6 +1,7 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
@@ -11,6 +12,7 @@ public class Cliente {
 	
 	private String nome;
 	private Long telefone;
+	@DBRef
 	private Endereco endereco;
 	
 	public Cliente(String nome, Long telefone, Endereco endereco) {
