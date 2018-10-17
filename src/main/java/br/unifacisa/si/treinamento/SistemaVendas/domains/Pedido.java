@@ -1,15 +1,12 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
-import org.springframework.data.mongodb.core.mapping.DBRef;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
 public class Pedido {
 	
 	
 	
 	private Integer quantidade;
-	@DBRef
+
 	private Produto produto;
 	private Double valorTotalPedido;
 	

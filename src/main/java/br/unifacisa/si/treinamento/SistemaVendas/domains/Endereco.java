@@ -1,9 +1,6 @@
 package br.unifacisa.si.treinamento.SistemaVendas.domains;
 
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
-@Document
 public class Endereco {
 	
 	

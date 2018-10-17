@@ -3,9 +3,7 @@ package br.unifacisa.si.treinamento.SistemaVendas.domains;
 import java.time.LocalDate;
 
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
 public class Fornecedor {
 	
 	private String nome;

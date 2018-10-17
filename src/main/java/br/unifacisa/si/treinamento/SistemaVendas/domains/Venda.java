@@ -16,7 +16,6 @@ public class Venda {
 	private Funcionario funcionario;
 	
 	private Double valorTotal;
-	@DBRef
 	private ArrayList<Pedido> pedidos;
 	
 	public String getId() {
