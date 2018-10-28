@@ -10,6 +10,13 @@ public class Categoria {
 	private String id;
 	
 	private String nome;
+	
+	
+
+	public Categoria(String nome) {
+		super();
+		this.nome = nome;
+	}
 
 	public String getId() {
 		return id;
